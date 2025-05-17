@@ -1,0 +1,54 @@
+/* Сторінка */
+.task-1-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* або center, якщо хочеш центр по вертикалі */
+  background-color: #f6f6fe;
+  position: relative;
+
+  padding: 20px; /* відступи всередині */
+  box-sizing: border-box;
+}
+
+/* Список категорій */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* відступи між блоками */
+  width: 440px; /* як у макеті */
+  margin: 0 auto; /* центрируем по горизонтали */
+  box-sizing: border-box;
+}
+
+/* Блок категорії */
+.item {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Заголовок категорії */
+.item > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+/* Список елементів всередині категорії */
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Окремий елемент списку */
+.item ul li {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #2e2f42;
+  background-color: #f6f6fe;
+}
