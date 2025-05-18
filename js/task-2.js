@@ -1,3 +1,5 @@
+const galleryEl = document.querySelector(".gallery");
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -22,5 +24,19 @@ const images = [
   {
     url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     alt: "Lighthouse Coast Sea",
-  }
+  },
 ];
+
+// проходимося по масиву і створюємо HTML-рядки з усіма <li> і <img>
+const markup = images
+  .map(
+    ({ url, alt }) =>
+      `<li class="gallery__item">
+        <img class="gallery__image" src="${url}" alt="${alt}" />
+      </li>`
+  )
+  .join("");
+
+// Додавання всіх елементів <li> в <ul></ul> однією операцією в DOM //
+
+galleryEl.insertAdjacentHTML("beforeend", markup);
