@@ -1,14 +1,14 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 48px 24px;
   list-style: none;
-  padding: 0;
+  padding: 100px 156px;
   justify-content: center;
 }
 
 .gallery__item {
-  flex-basis: calc((100% - 40px) / 3); /* 3 в ряд з відступами */
+  flex-basis: calc((100% - 48px) / 3); /* 3 в ряд з відступами */
   /* max-width: 300px; обмеження ширини */
 }
 
