@@ -1,3 +1,15 @@
+/* Загальні стилі для звичайних посилань, НЕ меню */
+a:not(.nav-link) {
+  text-decoration: none;
+  color: #060606;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:not(.nav-link):hover {
+  color: #0a0b0b;
+}
+
 /* Скидання стандартних відступів */
 * {
   box-sizing: border-box;
@@ -20,7 +32,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #f6f6fe;
   color: #212121;
   line-height: 1.5;
   overflow-x: hidden; /* додай, щоб не було горизонтального скролу */
@@ -30,18 +42,6 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-/* ⬇ стилі для посилань */
-a {
-  text-decoration: none;
-  color: #2196f3;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #1565c0;
 }
 
 /* ⬇ Go back посилання */
@@ -61,4 +61,38 @@ a:hover {
 
 .go-back:hover {
   background-color: #bdbdbd;
+}
+
+/* Стилізація списку */
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin-top: 40px;
+}
+
+/* Стилізація посилань у списку */
+.nav-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #bcbae3;
+  color: white;
+  transform: translateY(-2px);
+  border-color: #aaa7f0;
+  box-shadow: 0 6px 20px rgba(116, 110, 219, 0.3);
 }

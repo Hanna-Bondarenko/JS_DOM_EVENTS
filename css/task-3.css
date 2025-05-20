@@ -1,0 +1,56 @@
+/* Стилі для контейнера завдання */
+.task3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e8f0fe, #ffffff);
+}
+
+/* Стилі для інпуту */
+.name-input {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+  outline: none;
+  width: 280px;
+  max-width: 90%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.name-input:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.4);
+}
+
+/* Стилі для заголовка */
+.greeting-text {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+/* Стилі для span з іменем */
+.user-name {
+  color: #1565c0;
+  font-weight: 700;
+}
+.reset-button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #2e5b91;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #132063;
+}
